@@ -1,146 +1,514 @@
 <!DOCTYPE html>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ index.html of bbauska/responsive-bs making resp-bs.bauska.org ~~~~~~~~~~~~~~~~~~~~~~-->
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>Building a Vertical Timeline With CSS and a Touch of JavaScript (v2)</title>
-  <link rel="stylesheet" href="./css/styles.css">
-
+  <title>Responsive Bootstrap Dropdown Mega Menu</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+  <link rel="stylesheet" href="./style.css">
 </head>
-<body>
-<!-- partial:index.partial.html -->
-<section class="intro">
-  <div class="container">
-    <h1>Vertical Timeline v2 &darr;</h1>
-    <p>My Main Menu <a href="https://cellardoor.bauska.org" target="_blank">here</a></p>
-  </div>
-</section>
-
-<section class="timeline">
-  <ol>
-    <li>
-      <div class="item-inner">
-        <div class="time-wrapper">
-          <time>2017</time>
-        </div>
-        <div class="details">
-          <h3>ufo's</h3>
-          <p>Where to begin? 2017 kicked off a Times article. Many, many disclosure articles exist, but none as powerful as this. Proving beyond any doubt whatsoever that humanity is being visited
-		  by extraterrestrials. The so-called scientists worldwide are a fucking joke. No funding is the only reason this whole disclosure hasn't happened yet. The ONLY reason. Fucking money!!!</p>
-        </div>
-      </div>
-    </li>
-    <li>
-      <div class="item-inner">
-        <div class="time-wrapper">
-          <time>1947</time>
-        </div>
-        <div class="details">
-          <h3>Roswell, New Mexico</h3>
-          <p>The 'modern day' beginning of UFO's, Extra-Terrestrials and life beyond humans and greed.</p>
-        </div>
-      </div>
-    </li>
-    <li>
-      <div class="item-inner">
-        <div class="time-wrapper">
-          <time>1940</time>
-        </div>
-        <div class="details">
-          <h3>Life without MONEY</h3>
-          <p>.</p>
-        </div>
-      </div>
-    </li>
-    <li>
-      <div class="item-inner">
-        <div class="time-wrapper">
-          <time>Time to Evict Trump</time>
-        </div>
-        <div class="details">
-          <h3>And his minions &amp; psycophants</h3>
-          <p>Read my pirated book, noKings.bauska.org, thom.bauska.org, thom-hartmann.bauska.org 
-		    &amp; zombie.bauska.org.</p>
-        </div>
-      </div>
-    </li>
-    <li>
-      <div class="item-inner">
-        <div class="time-wrapper">
-          <time>Jail time for Psycophants</time>
-        </div>
-        <div class="details">
-          <h3>Justice is Served Cold</h3>
-          <p>It will be a while, but in my lifetime I will see these pathetic slime jailed.</p>
-        </div>
-      </div>
-    </li>
-    <li>
-      <div class="item-inner">
-        <div class="time-wrapper">
-          <time>1956</time>
-        </div>
-        <div class="details">
-          <h3>1700's</h3>
-          <p>More and more for 1700 thru 1799.</p>
-        </div>
-      </div>
-    </li>
-    <li>
-      <div class="item-inner">
-        <div class="time-wrapper">
-          <time>1967</time>
-        </div>
-        <div class="details">
-          <h3>Heading Here</h3>
-          <p>In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.</p>
-        </div>
-      </div>
-    </li>
-    <li>
-      <div class="item-inner">
-        <div class="time-wrapper">
-          <time>1985</time>
-        </div>
-        <div class="details">
-          <h3>Heading Here</h3>
-          <p>Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros</p>
-        </div>
-      </div>
-    </li>
-    <li>
-      <div class="item-inner">
-        <div class="time-wrapper">
-          <time>2000</time>
-        </div>
-        <div class="details">
-          <h3>Heading Here</h3>
-          <p>In mattis elit vitae odio posuere, nec maximus massa varius. Suspendisse varius volutpat mattis. Vestibulum id magna est.</p>
-        </div>
-      </div>
-    </li>
-    <li>
-      <div class="item-inner">
-        <div class="time-wrapper">
-          <time>2012</time>
-        </div>
-        <div class="details">
-          <h3>Heading Here</h3>
-          <p>Proin iaculis, nibh eget efficitur varius, libero tellus porta dolor, at pulvinar tortor ex eget ligula. Integer eu dapibus arcu, sit amet sollicitudin eros</p>
-        </div>
-      </div>
-    </li>
-  </ol>
-
-</section>
-<footer class="page-footer">
-  <span>made by </span>
-  <a href="https://georgemartsoukos.com/" target="_blank">
-    <img width="24" height="24" src="https://assets.codepen.io/162656/george-martsoukos-small-logo.svg" alt="George Martsoukos logo">
+<body id="mm-united">
+  <header id="navbar">
+    <div class="header-body">
+      <div class="header-container container">
+        <div class="row">
+          <nav class="navbar" color="primary" animation="yes" transparent="no" icons="no" sticky-top="no">
+            <div class="container-fluid">
+              <div class="navbar-header">
+                <div class="hamburger" hamburger="1" data-toggle="collapse" data-target=".collapse">
+                  <div class="hamburger-box">
+                    <div class="hamburger-inner"></div>
+                  </div>
+                </div>
+                <a class="navbar-brand" href="http://www.cellardoor.bauska.org">
+                  <i class="fa fa-envira" aria-hidden="true"></i>
+                  Bootstrap
+                  <span class="highlight">
+                  Mega Menu
+                  </span>
+                </a>
+              </div>
+              <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav navbar-left">
+                  <li class="active">
+                    <a href="index.html">
+                      <span class="hidden-sm hidden-md hidden-lg">Home</span>
+                      <span class="hidden-xs"><i class="fa fa-home" aria-hidden="true"></i></span>
+                    </a>
+                  </li>
+                  <!-- /.active -->
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" href="#">Menu </a>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown-submenu">
+                        <a href="#">Colors</a>
+                        <ul class="dropdown-menu">
+                          <li class="dropdown-submenu">
+                            <a href="#">Bootstrap</a>
+                            <ul class="dropdown-menu">
+                              <li><a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/color-default.html">Default</a></li>
+                              <li><a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/color-inverse.html">Inverse</a></li>
+                              <li><a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/color-success.html">Success</a></li>
+                              <li><a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/color-info.html">Info</a></li>
+                              <li><a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/color-warning.html">Warning</a></li>
+                              <li><a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/color-danger.html">Danger</a></li>
+                            </ul>
+                            <!-- /.dropdown-menu -->
+                          </li>
+                          <!-- /.dropdown-submenu -->
+                          <li><a href="index.html">Primary <span class="tip hidden-xs" color="primary">Default</span></a></li>
+                          <li><a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/color-tertiary.html">Tertiary</a></li>
+                          <li><a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/color-quaternary.html">Quaternary</a></li>
+                          <li><a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/color-alert.html">Alert</a></li>
+                        </ul>
+                        <!-- /.dropdown-menu -->
+                      </li>
+                      <!-- /.dropdown-submenu -->
+                      <li><a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/left.html">Left align</a></li>
+                      <li><a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/right.html">Right align</a></li>
+                      <li><a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/grid.html">Grid</a></li>
+                      <li><a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/login.html">Login</a></li>
+                      <li><a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/search.html">Search</a></li>
+                      <li class="dropdown-submenu">
+                        <a href="#">Special</a>
+                        <ul class="dropdown-menu">
+                          <li class="dropdown-submenu">
+                            <a href="#">Icons</a>
+                            <ul class="dropdown-menu">
+                              <li><a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/fa-icons.html">Font Awesome</a></li>
+                              <li><a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/pe-icons.html">Stroke</a></li>
+                            </ul>  <!-- class="dropdown-menu" -->
+                          </li>  <!-- class="dropdown-submenu" -->
+                          <!-- /.dropdown-submenu -->
+                          <li class="dropdown-submenu">
+                            <a href="#">Transparent</a>
+                            <ul class="dropdown-menu">
+                              <li>
+                                <a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/transparent.html">Default</a>
+                              </li>
+                              <li>
+                                <a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/fa-icons-transparent.html">Font Awesome</a>
+                              </li>
+                              <li>
+                                <a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/pe-icons-transparent.html">Stroke</a>
+                              </li>
+                            </ul>  <!-- class="dropdown-menu" -->
+                          </li>  <!-- class="dropdown-submenu" -->
+                        </ul>  <!-- class="dropdown-menu" -->
+                      </li>  <!-- class="dropdown-submenu" -->
+                      <li><a href="http://mm-united.com/responsive-bootstrap-dropdown-mega-menu/" 
+                        target="_blank">Buy now 
+                        <i class="icon fa fa-shopping-cart" aria-hidden="true"></i>
+                        <em class="subtitle">(Purchase the Bootstrap Menu)</em></a>
+                      </li>
+                    </ul>  <!-- class="dropdown-menu" -->
+                  </li>  <!-- class="dropdown" -->
+                  <li class="dropdown dropdown-menu-full">
+                    <a class="dropdown-toggle" href="#">News </a>    
+                    <ul class="dropdown-menu">
+                      <li>
+                        <div class="dropdown-menu-content">
+                          <div class="col-md-3">
+                            <figure color="primary">
+                              <div class="news">
+                                <div class="image">
+                                  <img src="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/img/news/1.jpg" 
+                                    alt="MM United News">
+                                </div>  <!-- class="image" -->
+                                <figcaption>
+                                  <div class="date">
+                                    <span class="day">25</span>
+                                    <span class="month">Sep</span>
+                                  </div>
+                                  <h3>Lorem ipsum dolor sit amet</h3>
+                                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua ...</p>
+                                  <footer>
+                                    <div class="views"><i class="fa fa-eye" aria-hidden="true"></i>3,934</div>
+                                    <div class="love"><i class="fa fa-heart" aria-hidden="true"></i>512</div>
+                                    <div class="comments"><i class="fa fa-comments" aria-hidden="true"></i>47</div>
+                                  </footer>
+                                </figcaption>
+                              </div>  <!-- class="news" -->
+                            </figure>  <!-- color="primary" -->
+                          </div>  <!-- class="class="col-md-3" -->
+                          <div class="col-md-3">
+                            <figure color="primary">
+                              <div class="news">
+                                <div class="image">
+                                  <img 
+                                    src="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/img/news/2.jpg" alt="MM United News">
+                                </div>
+                                <figcaption>
+                                  <div class="date">
+                                    <span class="day">26</span>
+                                    <span class="month">Sep</span>
+                                  </div>
+                                  <h3>Lorem ipsum dolor sit amet</h3>
+                                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua ...</p>
+                                  <footer>
+                                    <div class="views"><i class="fa fa-eye" aria-hidden="true"></i>2,107</div>
+                                    <div class="love"><i class="fa fa-heart" aria-hidden="true"></i>346</div>
+                                    <div class="comments"><i class="fa fa-comments" aria-hidden="true"></i>23</div>
+                                  </footer>
+                                </figcaption>
+                              </div>  <!-- class="news" -->
+                            </figure>  <!-- color="primary" -->
+                          </div>  <!-- class="col-md-3" -->
+                          <div class="col-md-3">
+                            <figure color="primary">
+                              <div class="news">
+                                <div class="image">
+                                  <img 
+                                    src="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/img/news/3.jpg" alt="MM United News">
+                                </div>
+                                <figcaption>
+                                  <div class="date"><span class="day">26</span><span class="month">Sep</span></div>
+                                  <h3>Lorem ipsum dolor sit amet</h3>
+                                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua ...</p>
+                                  <footer>
+                                    <div class="views"><i class="fa fa-eye" aria-hidden="true"></i>1978</div>
+                                    <div class="love"><i class="fa fa-heart" aria-hidden="true"></i>210</div>
+                                    <div class="comments"><i class="fa fa-comments" aria-hidden="true"></i>14</div>
+                                  </footer>
+                                </figcaption>
+                              </div>  <!-- class="news" -->
+                            </figure>  <!-- color="primary" -->
+                          </div>  <!-- class="col-md-3" -->
+                          <div class="col-md-3">
+                            <figure color="primary">
+                              <div class="news">
+                                <div class="image"><img src="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/img/news/4.jpg" alt="MM United News"></div>
+                                <figcaption>
+                                  <div class="date"><span class="day">26</span><span class="month">Sep</span></div>
+                                  <h3>Lorem ipsum dolor sit amet</h3>
+                                  <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua ...</p>
+                                  <footer>
+                                    <div class="views"><i class="fa fa-eye" aria-hidden="true"></i>1271</div>
+                                    <div class="love"><i class="fa fa-heart" aria-hidden="true"></i>117</div>
+                                    <div class="comments"><i class="fa fa-comments" aria-hidden="true"></i>3</div>
+                                  </footer>
+                                </figcaption>
+                              </div>  <!-- class="news" -->
+                            </figure>  <!-- color="primary" -->
+                          </div>  <!-- class="col-md-3" -->
+                        </div>  <!-- class="dropdown-menu-content" -->
+                      </li>
+                    </ul>  <!-- class="dropdown-menu" -->
+                  </li>  <!-- class="dropdown dropdown-menu-full" -->
+                  <li class="dropdown dropdown-menu-full">
+                    <a class="dropdown-toggle" href="#">Gallery</a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <div class="dropdown-menu-content">
+                          <div class="col-md-2">
+                            <h4>Image Title #1</h4>
+                            <hr>
+                            <div animation="zoom"><img src="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/img/gallery/1.jpg" alt="Mega Navbar gallery image"></div>
+                          </div>  <!-- class="col-md-2" -->
+                          <div class="col-md-2">
+                            <h4>Image Title #2</h4>
+                            <hr>
+                            <div animation="zoom"><img src="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/img/gallery/2.jpg" alt="Mega Navbar gallery image"></div>
+                          </div>  <!-- class="col-md-2" -->
+                          <div class="col-md-2">
+                            <h4>Image Title #3</h4>
+                            <hr>
+                            <div animation="zoom"><img src="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/img/gallery/3.jpg" alt="Mega Navbar gallery image"></div>
+                          </div>  <!-- class="col-md-2" -->
+                          <div class="col-md-2">
+                            <h4>Image Title #4</h4>
+                            <hr>
+                            <div animation="zoom"><img src="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/img/gallery/4.jpg" alt="Mega Navbar gallery image"></div>
+                          </div>  <!-- class="col-md-2" -->
+                          <div class="col-md-2">
+                            <h4>Image Title #5</h4>
+                            <hr>
+                            <div animation="zoom"><img src="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/img/gallery/5.jpg" alt="Mega Navbar gallery image"></div>
+                          </div>  <!-- class="col-md-2" -->
+                          <div class="col-md-2">
+                            <h4>Image Title #6</h4>
+                            <hr>
+                            <div animation="zoom"><img src="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/img/gallery/6.jpg" alt="Mega Navbar gallery image"></div>
+                          </div> <!-- class="col-md-2" -->
+                          <div class="col-md-4">
+                            <h4>Image Title #7</h4>
+                            <hr>
+                            <div animation="blur"><img src="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/img/gallery/7.jpg" alt="Mega Navbar gallery image"></div>
+                          </div>  <!-- class="col-md-4" -->
+                          <div class="col-md-4">
+                            <h4>Image Title #8</h4>
+                            <hr>
+                            <div animation="blur"><img src="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/img/gallery/8.jpg" alt="Mega Navbar gallery image"></div>
+                          </div>  <!-- class="col-md-4" -->
+                          <div class="col-md-4">
+                            <h4>Image Title #9</h4>
+                            <hr>
+                            <div animation="blur"><img src="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/img/gallery/9.jpg" alt="Mega Navbar gallery image"></div>
+                          </div>  <!-- class="col-md-4" -->
+                          <div class="col-md-6">
+                            <h4>Image Title #10</h4>
+                            <hr>
+                            <div animation="flash"><img src="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/img/gallery/10.jpg" alt="Mega Navbar gallery image"></div>
+                          </div>  <!-- class="col-md-6" -->
+                          <div class="col-md-6">
+                            <h4>Image Title #11</h4>
+                            <hr>
+                            <div animation="flash"><img src="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/img/gallery/11.jpg" alt="Mega Navbar gallery image"></div>
+                          </div>  <!-- class="col-md-6" -->
+                        </div>  <!-- class="dropdown-menu-content" -->
+                      </li>
+                    </ul>  <!-- class="dropdown-menu" -->
+                  </li>  <!-- class="dropdown dropdown-menu-full" -->
+                </ul>  <!-- class="nav navbar-nav navbar-left" -->
+                <form class="navbar-form navbar-left hidden-xs hidden-sm" role="search">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <span class="input-group-btn">
+                      <button class="btn btn-search" type="button"><i class="pe-7s-search"></i></button>
+                    </span>  <!-- class="input-group-btn" -->
+                  </div>  <!-- class="input-group" -->
+                </form>  <!-- class=navbar-form navbar-left hidden-xs hidden-sm" -->
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="dropdown">
+                    <a class="dropdown-toggle" href="#">Menu </a>
+                    <ul class="dropdown-menu">
+                      <li class="dropdown-submenu">
+                        <a href="#">Colors</a>
+                        <ul class="dropdown-menu">
+                          <li class="dropdown-submenu">
+                            <a href="#">Bootstrap</a>
+                            <ul class="dropdown-menu">
+                              <li><a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/color-default.html">Default</a></li>
+                              <li><a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/color-inverse.html">Inverse</a></li>
+                              <li><a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/color-success.html">Success</a></li>
+                              <li><a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/color-info.html">Info</a></li>
+                              <li><a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/color-warning.html">Warning</a></li>
+                              <li><a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/color-danger.html">Danger</a></li>
+                            </ul>  <!-- class="dropdown-menu" -->
+                          </li>  <!-- class="dropdown-submenu" -->
+                          <li><a href="index.html">Primary <span class="tip hidden-xs" color="primary">Default</span></a></li>
+                          <li><a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/color-tertiary.html">Tertiary</a></li>
+                          <li><a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/color-quaternary.html">Quaternary</a></li>
+                          <li><a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/color-alert.html">Alert</a></li>
+                        </ul>  <!-- class="dropdown-menu" -->
+                      </li>  <!-- class="dropdown-submenu" -->
+                      <li><a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/left.html">
+					    Left align</a></li>
+                      <li><a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/right.html">
+					    Right align</a></li>
+                      <li><a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/grid.html">
+					    Grid</a></li>
+                      <li><a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/login.html">
+					    Login</a></li>
+                      <li><a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/search.html">
+					    Search</a></li>
+                      <li class="dropdown-submenu">
+                        <a href="#">Special</a>
+                        <ul class="dropdown-menu">
+                          <li class="dropdown-submenu">
+                            <a href="#">Icons</a>
+                            <ul class="dropdown-menu">
+                              <li><a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/fa-icons.html">Font Awesome</a></li>
+                              <li><a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/pe-icons.html">Stroke</a></li>
+                            </ul>  <!-- class="dropdown-menu" -->
+                          </li>  <!-- class="dropdown-submenu" -->
+                          <li class="dropdown-submenu">
+                            <a href="#">Transparent</a>
+                            <ul class="dropdown-menu">
+                              <li><a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/transparent.html">Default</a></li>
+                              <li><a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/fa-icons-transparent.html">Font Awesome</a></li>
+                              <li><a href="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/pe-icons-transparent.html">Stroke</a></li>
+                            </ul>  <!-- class="dropdown-menu" -->
+                          </li>  <!-- class="dropdown-submenu" -->
+                        </ul>  <!-- class="dropdown-menu" -->
+                      </li>  <!-- class="dropdown-submenu" -->
+                      <li><a href="http://mm-united.com/responsive-bootstrap-dropdown-mega-menu/" target="_blank">Buy now <i class="icon fa fa-shopping-cart" aria-hidden="true"></i> <em class="subtitle">(Purchase the Bootstrap Menu)</em></a></li>
+                    </ul>  <!-- class="dropdown-menu" -->
+                  </li>  <!-- class="dropdown" -->
+                  <li class="dropdown dropdown-menu-half hidden-arrow">
+                    <a class="dropdown-toggle" href="#">
+                      <span class="hidden-sm hidden-md hidden-lg">Cart </span>
+                      <i class="fa fa-cart-arrow-down hidden-xs" aria-hidden="true"></i>
+                      <span class="label" color="alert">2</span>
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li>
+                        <div class="dropdown-menu-content">
+                          <div class="col-md-12">
+                            <div class="shopping-cart">
+                              <div class="column-labels">
+                                <label class="product-image">Image</label>
+                                <label class="product-details">Product</label>
+                                <label class="product-price">Price</label>
+                                <label class="product-quantity">Qty</label>
+                                <label class="product-removal">Remove</label>
+                                <label class="product-line-price">Total</label>
+                              </div>  <!-- class="column-labels" -->
+                              <div class="product">
+                                                                    <div class="product-image">
+                                                                      <img src="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/img/shopping-cart/1.jpg">
+                                                                    </div>
+                                                                    <div class="product-details">
+                                                                      <div class="product-title">Original signed player card</div>
+                                                                      <p class="product-description">Status: Leaves warehouse in 2 - 3 weeks</p>
+                                                                    </div>
+                                                                    <div class="product-price">12.99</div>
+                                                                    <div class="product-quantity">
+                                                                      <input type="number" value="2" min="1">
+                                                                    </div>
+                                                                    <div class="product-removal">
+                                                                      <button class="remove-product" color="alert">
+                                                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                                                      </button>
+                                                                    </div>
+                                                                    <div class="product-line-price">25.98</div>
+                              </div>  <!-- class="product" -->
+                              <div class="product">
+                                                                    <div class="product-image">
+                                                                      <img src="http://www.mm-united.com/products/bootstrap-mega-menu/preview/2.0.5/img/shopping-cart/2.jpg">
+                                                                    </div>
+                                                                    <div class="product-details">
+                                                                      <div class="product-title">Original signed player card</div>
+                                                                      <p class="product-description">Status: In Stock</p>
+                                                                    </div>
+                                                                    <div class="product-price">45.99</div>
+                                                                    <div class="product-quantity">
+                                                                      <input type="number" value="1" min="1">
+                                                                    </div>
+                                                                    <div class="product-removal">
+                                                                      <button class="remove-product" color="alert">
+                                                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                                                      </button>
+                                                                    </div>
+                                                                    <div class="product-line-price">45.99</div>
+                              </div>
+                              <div class="totals">
+                                <div class="totals-item">
+                                  <label>Subtotal:</label>
+                                  <div class="totals-value" id="cart-subtotal">71.97</div>
+                                </div>
+                                <div class="totals-item">
+                                  <label>Tax (5%):</label>
+                                  <div class="totals-value" id="cart-tax">3.60</div>
+                                </div>
+                                <div class="totals-item">
+                                  <label>Shipping:</label>
+                                                                      <div class="totals-value" id="cart-shipping">5.00</div>
+                                                                    </div>
+                                                                    <div class="totals-item totals-item-total">
+                                                                      <label>Grand Total:</label>
+                                                                      <div class="totals-value" id="cart-total">90.57</div>
+                                                                    </div>
+                              </div>  <!-- class="totals" -->
+                              <div class="clearfix"></div>
+                              <hr>
+                              <button type="button" class="btn btn-block" color="primary">Checkout</button>
+                            </div>  <!-- class="shopping-cart" -->
+                          </div>  <!-- class="col-md-12" -->
+                        </div>  <!-- class="dropdown-menu-content" -->
+                      </li>
+                    </ul>  <!-- class="dropdown-menu" -->
+                  </li>  <!-- class="dropdown dropdown-menu-half" -->
+                                            
+                                    <li class="dropdown dropdown-menu-small hidden-arrow">
+                                                <a class="dropdown-toggle" href="#">
+                                                    <span class="hidden-sm hidden-md hidden-lg">Login </span>
+                                                    <i class="fa fa-user hidden-xs" aria-hidden="true"></i>
+                                                </a>    
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <div class="dropdown-menu-content">
+                                                            <div class="module form-module" color="primary">
+                                                              <div class="toggle"><i class="fa fa-times fa-user-plus"></i></div>
+                                                              <div class="form">
+                                                                <h2>Login to your account</h2>
+                                                                <form>
+                                                                  <input type="text" placeholder="Username"/>
+                                                                  <input type="password" placeholder="Password"/>
+                                                                  <button type="submit">Login</button>
+                                                                </form>
+                                                                    <div class="footer"><a href="#">Forgot your password?</a></div>
+                                                              </div>  <!-- class="form" -->
+                                                              <div class="form">
+                                                                <h2>Create an account</h2>
+                                                                <form>
+                                                                  <input type="text" placeholder="Username"/>
+                                                                  <input type="password" placeholder="Password"/>
+                                                                  <input type="email" placeholder="Email Address"/>
+                                                                  <input type="tel" placeholder="Phone Number"/>
+                                                                  <button type="submit">Register</button>
+                                                                </form>
+                                                              </div>
+                                                              <!-- /.form -->
+                                                            </div>  <!-- class="module form-module" -->
+                                                        </div>  <!-- class="dropdown-menu-content" -->
+                                                    </li>
+                                                </ul>  <!-- class="dropdown-menu" -->
+                                    </li>  <!-- class="dropdown dropdown-menu-small hidden-arrow" -->
+                                    <li class="dropdown dropdown-menu-half hidden-arrow">
+                                                <a class="dropdown-toggle" href="#">
+                                                    <span class="hidden-sm hidden-md hidden-lg">Contact </span>
+                                                    <i class="fa fa-envelope hidden-xs" aria-hidden="true"></i>
+                                                </a>
+                                                <ul class="dropdown-menu">
+                                                    <li>
+                                                        <div class="dropdown-menu-content">
+                                                            <div class="module form-module" color="primary">
+                                                              <div class="form">
+                                                                <h2>Contact MM United</h2>
+                                                                <form>
+                                                                    <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <input type="text" placeholder="Name"/>
+                                                                            <input type="text" placeholder="Email addres"/>
+                                                                                <input type="text" placeholder="Subject"/>
+                                                                        </div>  <!-- class="col-md-6 -->
+                                                                        <div class="col-md-6">
+                                                                            <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+                                                                        </div>  <!-- class="col-md-6" -->
+                                                                    </div>  <!-- class="row" -->
+                                                                  <button type="submit">Send</button>
+                                                                </form>
+                                                              </div>  <!-- class="form" -->
+                                                              <div class="form">
+                                                                <h2>Contact MM United</h2>
+                                                                <form>
+                                                                  <div class="row">
+                                                                        <div class="col-md-6">
+                                                                            <input type="text" placeholder="Name"/>
+                                                                            <input type="text" placeholder="Email addres"/>
+                                                                                <input type="text" placeholder="Subject"/>
+                                                                        </div>  <!-- class="col-md-6" -->
+                                                                        <div class="col-md-6">
+                                                                            <textarea name="message" type="text" id="input-message" placeholder="Message"></textarea>
+                                                                        </div>  <!-- class="col-md-6" -->
+                                                                    </div>  <!-- class="row" -->               
+                                                                  <button type="submit">Send</button>
+                                                                </form>
+                                                              </div>  <!-- class="form" -->
+                                                            </div>  <!-- class="module form-module" color="primary" -->
+                                                        </div>  <!-- class="dropdown-menu-content" -->
+                                                    </li>
+                                                </ul>  <!-- class="dropdown-menu" -->
+                                            </li>  <!-- class="dropdown dropdown-menu-full hidden-arrow" -->
+                                </ul>  <!-- class="nav navbar-nav navbar-right" -->
+                              </div>  <!-- class="collapse navbar-collapse" -->
+                            </div>  <!-- class="container(-fluid)" -->
+          </nav>  <!-- class="navbar" color="primary" animation="yes" transparent="no" icons="no" sticky-top="no" -->
+        </div>  <!-- class="header-container .container(-fluid)" -->
+      </div>  <!-- class="row" -->
+    </div>  <!-- class="header-body" -->
+  </header>  <!-- id="#navbar" -->
+  <a class="btn" 
+    color="primary" 
+    href="http://www.mm-united.com/products/bootstrap-mega-menu/" 
+    target="_blank">
+    Get Premium Bootstrap Mega Menu
   </a>
-</footer>
+</body>
 <!-- partial -->
-  <script  src="./js/scripts.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script><script  src="./script.js"></script>
 
 </body>
 </html>
